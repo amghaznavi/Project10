@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7FC5C2D0242CD6BE00CE9089 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC5C2CF242CD6BE00CE9089 /* AppDelegate.swift */; };
+		7FC5C2D2242CD6BE00CE9089 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC5C2D1242CD6BE00CE9089 /* SceneDelegate.swift */; };
+		7FC5C2DA242CD6BE00CE9089 /* WakyZzz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7FC5C2D8242CD6BE00CE9089 /* WakyZzz.xcdatamodeld */; };
+		7FC5C2DC242CD6C100CE9089 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FC5C2DB242CD6C100CE9089 /* Assets.xcassets */; };
+		7FC5C2EF242CD7F800CE9089 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FC5C2EE242CD7F800CE9089 /* Main.storyboard */; };
+		7FC5C2F1242CD80600CE9089 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC5C2F0242CD80600CE9089 /* Alarm.swift */; };
+		7FC5C2F3242CD80C00CE9089 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC5C2F2242CD80C00CE9089 /* Action.swift */; };
+		7FC5C2F6242CDC0F00CE9089 /* General.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7FC5C2F4242CDC0F00CE9089 /* General.mp3 */; };
+		7FC5C2F7242CDC0F00CE9089 /* Evil.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7FC5C2F5242CDC0F00CE9089 /* Evil.mp3 */; };
+		7FC5C2F9242CDC3300CE9089 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC5C2F8242CDC3300CE9089 /* DataManager.swift */; };
+		7FC5C2FB242CDC3F00CE9089 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC5C2FA242CDC3F00CE9089 /* AlarmViewController.swift */; };
+		7FC5C2FD242CDC4500CE9089 /* AlarmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC5C2FC242CDC4500CE9089 /* AlarmsViewController.swift */; };
+		7FC5C2FF242CDC8000CE9089 /* NotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC5C2FE242CDC8000CE9089 /* NotificationsManager.swift */; };
+		7FC5C301242CDC8600CE9089 /* NotificationsManagerHelperFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC5C300242CDC8600CE9089 /* NotificationsManagerHelperFile.swift */; };
+		7FC5C304242CDD8000CE9089 /* WakyZzz+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC5C302242CDD8000CE9089 /* WakyZzz+CoreDataClass.swift */; };
+		7FC5C305242CDD8000CE9089 /* WakyZzz+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC5C303242CDD8000CE9089 /* WakyZzz+CoreDataProperties.swift */; };
+		7FC5C307242CDECC00CE9089 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC5C306242CDECC00CE9089 /* Constants.swift */; };
+		7FC5C30A242CE01B00CE9089 /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC5C309242CE01B00CE9089 /* AlarmTableViewCell.swift */; };
+		7FC9B3DE242F3BFC00256BC3 /* WakyZzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC9B3DD242F3BFC00256BC3 /* WakyZzzTests.swift */; };
+		7FD43D8E242E324F00B371A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD43D8D242E324E00B371A7 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7FC9B3E0242F3BFC00256BC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FC5C2C4242CD6BE00CE9089 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FC5C2CB242CD6BE00CE9089;
+			remoteInfo = WakyZzz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7FC5C2CC242CD6BE00CE9089 /* WakyZzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WakyZzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FC5C2CF242CD6BE00CE9089 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7FC5C2D1242CD6BE00CE9089 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7FC5C2D9242CD6BE00CE9089 /* WakyZzz.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WakyZzz.xcdatamodel; sourceTree = "<group>"; };
+		7FC5C2DB242CD6C100CE9089 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7FC5C2E0242CD6C100CE9089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FC5C2EE242CD7F800CE9089 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7FC5C2F0242CD80600CE9089 /* Alarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		7FC5C2F2242CD80C00CE9089 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		7FC5C2F4242CDC0F00CE9089 /* General.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = General.mp3; sourceTree = "<group>"; };
+		7FC5C2F5242CDC0F00CE9089 /* Evil.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Evil.mp3; sourceTree = "<group>"; };
+		7FC5C2F8242CDC3300CE9089 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		7FC5C2FA242CDC3F00CE9089 /* AlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		7FC5C2FC242CDC4500CE9089 /* AlarmsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmsViewController.swift; sourceTree = "<group>"; };
+		7FC5C2FE242CDC8000CE9089 /* NotificationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsManager.swift; sourceTree = "<group>"; };
+		7FC5C300242CDC8600CE9089 /* NotificationsManagerHelperFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsManagerHelperFile.swift; sourceTree = "<group>"; };
+		7FC5C302242CDD8000CE9089 /* WakyZzz+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WakyZzz+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		7FC5C303242CDD8000CE9089 /* WakyZzz+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WakyZzz+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		7FC5C306242CDECC00CE9089 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7FC5C309242CE01B00CE9089 /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
+		7FC9B3DB242F3BFC00256BC3 /* WakyZzzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WakyZzzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FC9B3DD242F3BFC00256BC3 /* WakyZzzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakyZzzTests.swift; sourceTree = "<group>"; };
+		7FC9B3DF242F3BFC00256BC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FD43D8D242E324E00B371A7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7FC5C2C9242CD6BE00CE9089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FC9B3D8242F3BFC00256BC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7FC5C2C3242CD6BE00CE9089 = {
+			isa = PBXGroup;
+			children = (
+				7FC5C2CE242CD6BE00CE9089 /* WakyZzz */,
+				7FC9B3DC242F3BFC00256BC3 /* WakyZzzTests */,
+				7FC5C2CD242CD6BE00CE9089 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7FC5C2CD242CD6BE00CE9089 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FC5C2CC242CD6BE00CE9089 /* WakyZzz.app */,
+				7FC9B3DB242F3BFC00256BC3 /* WakyZzzTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FC5C2CE242CD6BE00CE9089 /* WakyZzz */ = {
+			isa = PBXGroup;
+			children = (
+				7FC5C2E8242CD71900CE9089 /* Model */,
+				7FC5C2E7242CD71300CE9089 /* View */,
+				7FC5C2E6242CD70C00CE9089 /* Controller */,
+				7FC5C2EA242CD77400CE9089 /* Alarm Data Manager */,
+				7FC5C2EC242CD78A00CE9089 /* Alarm Notifications Manager */,
+				7FC5C2E9242CD73200CE9089 /* Supporting files */,
+			);
+			path = WakyZzz;
+			sourceTree = "<group>";
+		};
+		7FC5C2E6242CD70C00CE9089 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7FC5C2FC242CDC4500CE9089 /* AlarmsViewController.swift */,
+				7FC5C2FA242CDC3F00CE9089 /* AlarmViewController.swift */,
+				7FC5C308242CE00200CE9089 /* Component */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7FC5C2E7242CD71300CE9089 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7FC5C2EE242CD7F800CE9089 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7FC5C2E8242CD71900CE9089 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7FC5C2F0242CD80600CE9089 /* Alarm.swift */,
+				7FC5C2F2242CD80C00CE9089 /* Action.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7FC5C2E9242CD73200CE9089 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				7FC5C2ED242CD7B500CE9089 /* Sound files */,
+				7FC5C306242CDECC00CE9089 /* Constants.swift */,
+				7FC5C2CF242CD6BE00CE9089 /* AppDelegate.swift */,
+				7FC5C2D1242CD6BE00CE9089 /* SceneDelegate.swift */,
+				7FC5C2DB242CD6C100CE9089 /* Assets.xcassets */,
+				7FD43D8D242E324E00B371A7 /* LaunchScreen.storyboard */,
+				7FC5C2E0242CD6C100CE9089 /* Info.plist */,
+			);
+			name = "Supporting files";
+			sourceTree = "<group>";
+		};
+		7FC5C2EA242CD77400CE9089 /* Alarm Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				7FC5C302242CDD8000CE9089 /* WakyZzz+CoreDataClass.swift */,
+				7FC5C303242CDD8000CE9089 /* WakyZzz+CoreDataProperties.swift */,
+				7FC5C2F8242CDC3300CE9089 /* DataManager.swift */,
+				7FC5C2D8242CD6BE00CE9089 /* WakyZzz.xcdatamodeld */,
+			);
+			path = "Alarm Data Manager";
+			sourceTree = "<group>";
+		};
+		7FC5C2EC242CD78A00CE9089 /* Alarm Notifications Manager */ = {
+			isa = PBXGroup;
+			children = (
+				7FC5C2FE242CDC8000CE9089 /* NotificationsManager.swift */,
+				7FC5C300242CDC8600CE9089 /* NotificationsManagerHelperFile.swift */,
+			);
+			path = "Alarm Notifications Manager";
+			sourceTree = "<group>";
+		};
+		7FC5C2ED242CD7B500CE9089 /* Sound files */ = {
+			isa = PBXGroup;
+			children = (
+				7FC5C2F4242CDC0F00CE9089 /* General.mp3 */,
+				7FC5C2F5242CDC0F00CE9089 /* Evil.mp3 */,
+			);
+			name = "Sound files";
+			sourceTree = "<group>";
+		};
+		7FC5C308242CE00200CE9089 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				7FC5C309242CE01B00CE9089 /* AlarmTableViewCell.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		7FC9B3DC242F3BFC00256BC3 /* WakyZzzTests */ = {
+			isa = PBXGroup;
+			children = (
+				7FC9B3DD242F3BFC00256BC3 /* WakyZzzTests.swift */,
+				7FC9B3DF242F3BFC00256BC3 /* Info.plist */,
+			);
+			path = WakyZzzTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7FC5C2CB242CD6BE00CE9089 /* WakyZzz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FC5C2E3242CD6C100CE9089 /* Build configuration list for PBXNativeTarget "WakyZzz" */;
+			buildPhases = (
+				7FC5C2C8242CD6BE00CE9089 /* Sources */,
+				7FC5C2C9242CD6BE00CE9089 /* Frameworks */,
+				7FC5C2CA242CD6BE00CE9089 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WakyZzz;
+			productName = WakyZzz;
+			productReference = 7FC5C2CC242CD6BE00CE9089 /* WakyZzz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7FC9B3DA242F3BFC00256BC3 /* WakyZzzTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FC9B3E4242F3BFC00256BC3 /* Build configuration list for PBXNativeTarget "WakyZzzTests" */;
+			buildPhases = (
+				7FC9B3D7242F3BFC00256BC3 /* Sources */,
+				7FC9B3D8242F3BFC00256BC3 /* Frameworks */,
+				7FC9B3D9242F3BFC00256BC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FC9B3E1242F3BFC00256BC3 /* PBXTargetDependency */,
+			);
+			name = WakyZzzTests;
+			productName = WakyZzzTests;
+			productReference = 7FC9B3DB242F3BFC00256BC3 /* WakyZzzTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7FC5C2C4242CD6BE00CE9089 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Am GHAZNAVI";
+				TargetAttributes = {
+					7FC5C2CB242CD6BE00CE9089 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					7FC9B3DA242F3BFC00256BC3 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 7FC5C2CB242CD6BE00CE9089;
+					};
+				};
+			};
+			buildConfigurationList = 7FC5C2C7242CD6BE00CE9089 /* Build configuration list for PBXProject "WakyZzz" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7FC5C2C3242CD6BE00CE9089;
+			productRefGroup = 7FC5C2CD242CD6BE00CE9089 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7FC5C2CB242CD6BE00CE9089 /* WakyZzz */,
+				7FC9B3DA242F3BFC00256BC3 /* WakyZzzTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7FC5C2CA242CD6BE00CE9089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FC5C2EF242CD7F800CE9089 /* Main.storyboard in Resources */,
+				7FC5C2F7242CDC0F00CE9089 /* Evil.mp3 in Resources */,
+				7FC5C2DC242CD6C100CE9089 /* Assets.xcassets in Resources */,
+				7FD43D8E242E324F00B371A7 /* LaunchScreen.storyboard in Resources */,
+				7FC5C2F6242CDC0F00CE9089 /* General.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FC9B3D9242F3BFC00256BC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7FC5C2C8242CD6BE00CE9089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FC5C305242CDD8000CE9089 /* WakyZzz+CoreDataProperties.swift in Sources */,
+				7FC5C2F3242CD80C00CE9089 /* Action.swift in Sources */,
+				7FC5C304242CDD8000CE9089 /* WakyZzz+CoreDataClass.swift in Sources */,
+				7FC5C2F9242CDC3300CE9089 /* DataManager.swift in Sources */,
+				7FC5C2FB242CDC3F00CE9089 /* AlarmViewController.swift in Sources */,
+				7FC5C30A242CE01B00CE9089 /* AlarmTableViewCell.swift in Sources */,
+				7FC5C2D0242CD6BE00CE9089 /* AppDelegate.swift in Sources */,
+				7FC5C2FD242CDC4500CE9089 /* AlarmsViewController.swift in Sources */,
+				7FC5C307242CDECC00CE9089 /* Constants.swift in Sources */,
+				7FC5C2FF242CDC8000CE9089 /* NotificationsManager.swift in Sources */,
+				7FC5C2F1242CD80600CE9089 /* Alarm.swift in Sources */,
+				7FC5C2DA242CD6BE00CE9089 /* WakyZzz.xcdatamodeld in Sources */,
+				7FC5C301242CDC8600CE9089 /* NotificationsManagerHelperFile.swift in Sources */,
+				7FC5C2D2242CD6BE00CE9089 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FC9B3D7242F3BFC00256BC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FC9B3DE242F3BFC00256BC3 /* WakyZzzTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7FC9B3E1242F3BFC00256BC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FC5C2CB242CD6BE00CE9089 /* WakyZzz */;
+			targetProxy = 7FC9B3E0242F3BFC00256BC3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7FC5C2E1242CD6C100CE9089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7FC5C2E2242CD6C100CE9089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7FC5C2E4242CD6C100CE9089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 535TUX5424;
+				INFOPLIST_FILE = WakyZzz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AmG.WakyZzz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7FC5C2E5242CD6C100CE9089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 535TUX5424;
+				INFOPLIST_FILE = WakyZzz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AmG.WakyZzz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7FC9B3E2242F3BFC00256BC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 535TUX5424;
+				INFOPLIST_FILE = WakyZzzTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AmG.WakyZzzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WakyZzz.app/WakyZzz";
+			};
+			name = Debug;
+		};
+		7FC9B3E3242F3BFC00256BC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 535TUX5424;
+				INFOPLIST_FILE = WakyZzzTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AmG.WakyZzzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WakyZzz.app/WakyZzz";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7FC5C2C7242CD6BE00CE9089 /* Build configuration list for PBXProject "WakyZzz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FC5C2E1242CD6C100CE9089 /* Debug */,
+				7FC5C2E2242CD6C100CE9089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FC5C2E3242CD6C100CE9089 /* Build configuration list for PBXNativeTarget "WakyZzz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FC5C2E4242CD6C100CE9089 /* Debug */,
+				7FC5C2E5242CD6C100CE9089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FC9B3E4242F3BFC00256BC3 /* Build configuration list for PBXNativeTarget "WakyZzzTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FC9B3E2242F3BFC00256BC3 /* Debug */,
+				7FC9B3E3242F3BFC00256BC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7FC5C2D8242CD6BE00CE9089 /* WakyZzz.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7FC5C2D9242CD6BE00CE9089 /* WakyZzz.xcdatamodel */,
+			);
+			currentVersion = 7FC5C2D9242CD6BE00CE9089 /* WakyZzz.xcdatamodel */;
+			path = WakyZzz.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7FC5C2C4242CD6BE00CE9089 /* Project object */;
+}

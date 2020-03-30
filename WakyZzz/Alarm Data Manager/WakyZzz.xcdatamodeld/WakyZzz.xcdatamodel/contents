@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E266" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="WakyZzz" representedClassName=".WakyZzz" syncable="YES">
+        <attribute name="fri" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="isEnabled" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="mon" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="sat" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="sun" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="thu" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="time" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="tue" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="wed" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="WakyZzz" positionX="-63" positionY="-18" width="128" height="193"/>
+    </elements>
+</model>
