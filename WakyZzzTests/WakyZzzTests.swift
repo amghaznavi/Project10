@@ -10,11 +10,12 @@ import XCTest
 @testable import WakyZzz
 
 class WakyZzzTests: XCTestCase {
-
+    
     var alarm : Alarm?
     var dataManager : DataManager!
     var notificationsManager : NotificationsManager!
     var alarmViewController : AlarmViewController!
+    var alarmsViewController : AlarmsViewController!
     let userNotificationCenter = UNUserNotificationCenter.current()
     
     override func setUp() {
@@ -23,15 +24,22 @@ class WakyZzzTests: XCTestCase {
         dataManager = DataManager()
         notificationsManager = NotificationsManager()
         alarmViewController = AlarmViewController()
+        alarmsViewController = AlarmsViewController()
         removeAllAlarmsAndNotifications()
         config()
     }
     
     func config() {
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
         self.alarmViewController = (storyboard.instantiateViewController(withIdentifier: "AlarmViewController") as! AlarmViewController)
         self.alarmViewController.loadView()
         self.alarmViewController.viewDidLoad()
+        
+        self.alarmsViewController = (storyboard.instantiateViewController(withIdentifier: "AlarmsViewController") as! AlarmsViewController)
+        self.alarmsViewController.loadView()
+        self.alarmsViewController.viewDidLoad()
     }
     
     func removeAllAlarmsAndNotifications() {
@@ -40,17 +48,17 @@ class WakyZzzTests: XCTestCase {
     }
     
     func testGivenNewAlarm_WhenSetRepeatingDay_ThenGetRepeatingDaysString() {
-         let alarm = Alarm()
-         XCTAssert(alarm.repeating == "One time alarm")
-         alarm.repeatDays[0] = false
-         alarm.repeatDays[1] = true
-         alarm.repeatDays[2] = false
-         alarm.repeatDays[3] = true
-         alarm.repeatDays[4] = true
-         alarm.repeatDays[5] = false
-         alarm.repeatDays[6] = true
-         XCTAssert(alarm.repeating == "Tue, Thu, Fri, Sun", "If true, day should be Tuesday, Thuirsday, Friday and Sunday")
-     }
+        let alarm = Alarm()
+        XCTAssert(alarm.repeating == "One time alarm")
+        alarm.repeatDays[0] = false
+        alarm.repeatDays[1] = true
+        alarm.repeatDays[2] = false
+        alarm.repeatDays[3] = true
+        alarm.repeatDays[4] = true
+        alarm.repeatDays[5] = false
+        alarm.repeatDays[6] = true
+        XCTAssert(alarm.repeating == "Tue, Thu, Fri, Sun", "If true, day should be Tuesday, Thuirsday, Friday and Sunday")
+    }
     
     func testGivenNewAlarm_WhenSetTime_ThenGetTime() {
         let alarm = Alarm()
@@ -120,6 +128,10 @@ class WakyZzzTests: XCTestCase {
         }
     }
     
+    func testAlarmViewControllerTableView() {
+        XCTAssertNotNil(alarmViewController.tableView)
+    }
+    
     func testAlarmViewControllerTableViewDelegate() {
         XCTAssertNotNil(alarmViewController.tableView.delegate)
     }
@@ -127,5 +139,25 @@ class WakyZzzTests: XCTestCase {
     func testAlarmViewControllerTableViewDataSource() {
         XCTAssertNotNil(alarmViewController.tableView.dataSource)
     }
+    
+    
+    // MARK: - Test AlarmsViewController
+    
+    func testAlarmsViewControllerTableView() {
+        XCTAssertNotNil(alarmsViewController.tableView)
+    }
+    
+    func testAlarmsViewControllerTableViewDelegate() {
+        XCTAssertNotNil(alarmsViewController.tableView.delegate)
+    }
+    
+    func testAlarmsViewControllerTableViewDataSource() {
+        XCTAssertNotNil(alarmsViewController.tableView.dataSource)
+    }
+    
+    func testAlarmsViewControllerTitle() {
+        XCTAssertEqual("WakyZzz", alarmsViewController.navigationItem.title)
+    }
+    
     
 }

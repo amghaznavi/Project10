@@ -96,7 +96,7 @@ extension AlarmsViewController :  UITableViewDelegate {
     
    private func deleteAlarm(at indexPath: IndexPath) {
         let id = alarms[indexPath.row].id
-        
+
         DataManager.shared.removeAlarm(id: id)
         NotificationsManager.shared.removeNotification(id: id)
         

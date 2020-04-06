@@ -42,7 +42,7 @@ class AlarmTableViewCell: UITableViewCell {
 }
 
 
-
+//MARK: - AlarmCell Delegate
 extension AlarmsViewController : AlarmCellDelegate {
     
       func alarmCell(_ cell: AlarmTableViewCell, enabledChanged enabled: Bool) {
